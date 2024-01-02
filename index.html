@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML: A linguagem primordial da Web e seus elementos</title>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>HTML: A linguagem primordial da Web e seus elementos</h1>
+        <hr />
+        <h2>Índice</h2>
+        <nav>
+          <ul>
+            <li><a href="#oque-e">O que é?</a></li>
+            <li>
+              <a href="#elementos-html">Os elementos do HTML</a>
+              <ul>
+                <li>
+                  <a href="#dois-tipos-de-elemento">Dois tipos de elemento</a>
+                </li>
+                <li>
+                  <a href="#elementos-semanticos">Elementos semânticos</a>
+                </li>
+                <li><a href="#atributos">Atributos</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#elemento-imagem">O elemento imagem</a>
+              <ul>
+                <li><a href="#atributo-alt">O atributo "alt"</a></li>
+                <li><a href="#dimensoes-da-imagem">Dimensões da imagem</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#links-ou-ancoras">Os links ou âncoras</a>
+              <ul>
+                <li><a href="#atributo-target">O atributo "target"</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#misturando-elementos">Misturando elementos</a></li>
+            <li>
+              <a href="#listas">As listas</a>
+              <ul>
+                <li>
+                  <a href="#listas-ordenadas-x-nao-ordenadas"
+                    >Listas ordenadas x não-ordenadas</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#referencias">Referências</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="oque-e">
+        <h2 id="oque-e">O que é HTML?</h2>
+        <p>
+          O <abbr title="HyperText Markup Language">HTML</abbr> (HyperText
+          Markup Language), criado por Tim Berners-Lee nos primórdios da
+          internet, pode ser considerada a linguagem mais básica para a
+          construção de uma página web, pois ela é responsável por definir o
+          conteúdo da mesma, o acrônimo HTML traduzido para o português ficaria
+          algo como "Linguagem de marcação de hipertexto".
+        </p>
+
+        <p>
+          A linguagem funciona por meio dos chamados <b>elementos</b> que
+          definem o tipo de conteúdo sendo exibido e, usando as
+          <b lang="en">tags</b> que formam o elemento, marcamos onde ele começa
+          e termina. Por exemplo, podemos usar a tag
+          <code> &lt;p&gt;</code> para começar um parágrafo e
+          <code>&lt;/p&gt;</code> para terminá-lo.
+        </p>
+        <p>Mais adiante veremos mais detalhadamente sobre os elementos HTML.</p>
+
+        <p>
+          Outra característica fundamental é a presença dos
+          <b lang="en">hyperlinks</b> ou apenas <b lang="en">links</b>, que são
+          textos clicáveis que criam conexões entre as páginas (basicamente um
+          arquivo .html) de um mesmo site (conjunto de páginas) ou entre sites
+          diferentes, uma grande facilidade e inovação da época em que o HTML
+          foi criado.
+        </p>
+
+        <p>
+          Os hiperlinks e a função da linguagem de "marcar" o conteúdo são suas
+          principais características e dão à linguagem seu nome.
+        </p>
+        <p>
+          Por ser bastante básica, HTML é comumente usada com a linguagem
+          <abbr title="Cascading Style Sheets">CSS</abbr> para deixar a página
+          visualmente agradável e com JavaScript para a interatividade com o
+          usuário.
+        </p>
+        <p>
+          Mesmo simples, é a mais primordial das 3 linguagens, visto que não há
+          o que estilizar nem o que interagir se não tiver primeiro o conteúdo,
+          que é estabelecido por meio do HTML.
+        </p>
+        <figure>
+          <img
+            src="https://th.bing.com/th/id/OIP.RJj6cVSp14yStm5U2OT-QgHaEo?rs=1&pid=ImgDetMain"
+            alt="Código HTML"
+          />
+          <figcaption>Exemplo de código HTML</figcaption>
+        </figure>
+      </section>
+      <section id="elementos-html">
+        <h2>Os elementos do HTML</h2>
+        <p>
+          Como apresentado anteriormente, os elementos do HTML são usados para
+          marcar o conteúdo e delimitá-lo. Alguns exemplos de elementos:
+        </p>
+        <ul>
+          <li>&lt;h1&gt;</li>
+          <li>&lt;strong&gt;</li>
+          <li>&lt;a&gt;</li>
+          <li>&lt;p&gt;</li>
+        </ul>
+
+        <p>Um parágrafo escrito em HTML ficaria da seguinte forma:</p>
+
+        <code>&lt;p&gt;Eu sou um parágrafo&lt;/p&gt;</code>
+
+        <h3 id="dois-tipos-de-elemento">Dois tipos de elemento</h3>
+
+        <p>
+          Geralmente, os elementos são formados por uma tag de abertura (<code
+            >&lt;p&gt;</code
+          >
+          ) e uma de fechamento (<code>&lt;/p&gt;</code> ) que consiste na mesma
+          tag porém com uma barra à frente do nome do elemento.
+        </p>
+
+        <p>
+          Porém, alguns elementos não precisam de uma tag de fechamento, pois
+          eles não pedem um "conteúdo" a ser adicionado para funcionarem, como
+          uma imagem ou um campo de texto. Exemplos de elementos que não
+          precisam de uma tag de fechamento:
+        </p>
+        <ul>
+          <li>&lt;input&gt;</li>
+          <li>&lt;br&gt;</li>
+          <li>&lt;hr&gt;</li>
+          <li>&lt;img&gt;</li>
+        </ul>
+
+        <p>Um campo de texto escrito em HTML ficaria simplesmente:</p>
+
+        <code>&lt;input /&gt;</code>
+
+        <p>
+          Note que a barra já está presente no que seria a "tag de abertura"
+          visto que não é necessária uma tag de fechamento.
+        </p>
+      </section>
+
+      <h3 id="elementos-semanticos">Elementos semânticos</h3>
+      <p>
+        Com o lançamento o HTML5, sua versão mais recente até o momento, foi
+        introduzida a semântica à linguagem, isto é, elementos que carregam
+        consigo um significado. Esses elementos quando bem utilizados deixam a
+        página mais acessível para pessoas com algum tipo de deficiência e
+        também ajudam a melhorar o
+        <abbr lang="en" title="Search Engine Optimization">SEO</abbr> do site.
+        Exemplos de elementos semânticos:
+      </p>
+      <ul>
+        <li>&lt;section&gt;</li>
+        <li>&lt;header&gt;</li>
+        <li>&lt;nav&gt;</li>
+        <li>&lt;article&gt;</li>
+      </ul>
+      <p>
+        Esses elementos servem para indicar o que é, por exemplo, uma sessão de
+        uma página ou talvez um cabeçalho.
+      </p>
+      <p>
+        Mesmo não tendo impacto visual, isso ajuda muito para que leitores de
+        tela (programas que ajudam pessoas cegas a navegarem na internet) possam
+        funcionar da melhor forma.
+      </p>
+      <figure>
+        <img
+          src="https://www.lifewire.com/thmb/Y9H-0zTSmL9Ya_gVbu4DDs_HljQ=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/rehabilitation-of-the-blind-586033820-5a4c05f722fa3a0036e11c38.jpg"
+          alt="Garota com deficiência visual usando computador"
+          width="490px"
+        />
+        <figcaption>
+          Pessoas com algum tipo de deficiência são extremamente beneficiadas
+          pelo uso de HTML semântico
+        </figcaption>
+      </figure>
+
+      <h3 id="atributos">Atributos</h3>
+      <p>
+        Para alterar o funcionamento padrão de um elemento, pode ser usado um
+        atributo dentro dele para isso.
+      </p>
+      <p>
+        Alguns atributos são globais (podem ser usados em qualquer elemento) e
+        outros são específicos e muitas vezes até obrigatórios de certos
+        elementos.
+      </p>
+      <p>Exemplos de atributos:</p>
+      <ul>
+        <li>id</li>
+        <li>href</li>
+        <li>lang</li>
+        <li>alt</li>
+        <li>style</li>
+      </ul>
+      <p>
+        O atributo "lang", por exemplo, define qual a linguagem do conteúdo
+        apresentado pelo elemento, na prática ele seria aplicado assim:
+      </p>
+      <code>&lt;p lang='en'&gt;I am a paragraph&lt;/p&gt;</code>
+      <p>O atributo é inserido dentro da tag de abertura do elemento.</p>
+      <p>
+        No exemplo acima, o atributo "lang" recebeu o argumento "en", indicando
+        que aquele parágrafo está escrito em inglês, o que ajuda bastante na
+        acessibilidade.
+      </p>
+
+      <p>
+        Entendido como funcionam elementos e atributos, podemos focar em como
+        funciona o HTML e alguns elementos específicos.
+      </p>
+
+      <section id="elemento-imagem">
+        <h2>O elemento de imagem</h2>
+
+        <p>
+          Para exibir uma imagem na tela, é utilizada a tag
+          <code>&lt;img /&gt;</code> que, como pode ter notado, é o tipo de tag
+          que se fecha sozinha.
+        </p>
+
+        <p>
+          Contudo, para que o computador saiba que imagem exibir, você precisa
+          indicar o caminho ou link da imagem em questão.
+        </p>
+
+        <p>
+          Isso é feito por meio do atributo "src", que recebe como argumento o
+          link da imagem. Exemplo:
+        </p>
+
+        <code
+          >&lt;img src='(insira aqui o link ou caminho da imagem)'/&gt;</code
+        >
+
+        <p>
+          Esse é o tipo de atributo obrigatório para uma tag img, pois sem ele
+          nada será exibido.
+        </p>
+
+        <h3 id="atributo-alt">Atributo "alt"</h3>
+
+        <p>
+          Outro atributo que pode ser usado numa tag img é o "alt", que seria o
+          texto alternativo, isto é, uma breve descrição da sua imagem.
+        </p>
+
+        <p>
+          É muito importante usar o alt por questões de acessibilidade, pois o
+          leitor de tela vai ler a descrição da imagem para o usuário. Ele não
+          terá nenhum impacto visual.
+        </p>
+
+        <p>
+          O texto alternativo somente será exibido no lugar da imagem caso ela
+          não apareça por algum motivo, como conexão ruim ou link quebrado.
+        </p>
+
+        <p>Exemplo de imagem "quebrada" com texto alt:</p>
+
+        <img src="gatinhosfofos" alt="Imagem de gatinhos fofos dormindo" />
+
+        <h3 id="dimensoes-da-imagem">Dimensões da imagem</h3>
+
+        <p>
+          Outros atributos que podem ser utilizados são "<b lang="en">width</b>"
+          e "<b lang="en">height</b>", que significam, respectivamente,
+          "<b>largura</b>" e "<b>altura</b>".
+        </p>
+
+        <p>
+          Esses atributos recebem como argumento algum valor em pixeis, por
+          exemplo, e definem as dimensões da imagem.
+        </p>
+
+        <p>Exemplos:</p>
+
+        <code
+          >&lt;img
+          src='https://th.bing.com/th/id/OIP.PL-Kh6UHSOWpYBIQKI-jGAAAAA?w=394&h=385&rs=1&pid=ImgDetMain'
+          alt='gato fofo' width='100px'/&gt;</code
+        >
+        <p>Irá exibir:</p>
+
+        <img
+          src="https://th.bing.com/th/id/OIP.PL-Kh6UHSOWpYBIQKI-jGAAAAA?w=394&h=385&rs=1&pid=ImgDetMain"
+          alt="gato fofo"
+          width="100px"
+        />
+
+        <p>
+          Enquanto
+          <code
+            >&lt;img
+            src='https://th.bing.com/th/id/OIP.PL-Kh6UHSOWpYBIQKI-jGAAAAA?w=394&h=385&rs=1&pid=ImgDetMain'
+            alt='gato fofo' width='200px'/&gt;</code
+          >
+          Irá exibir:
+        </p>
+
+        <img
+          src="https://th.bing.com/th/id/OIP.PL-Kh6UHSOWpYBIQKI-jGAAAAA?w=394&h=385&rs=1&pid=ImgDetMain"
+          alt="gato fofo"
+          width="200px"
+        />
+
+        <p>
+          Note que a altura não foi definida explicitamente, ela foi ajustada
+          automaticamente com a largura.
+        </p>
+      </section>
+
+      <section id="links-ou-ancoras">
+        <h2>Os links ou âncoras</h2>
+
+        <p>
+          No começo você leu que uma das principais características do HTML são
+          os links, também chamados de hiperlinks ou <b>âncoras</b>
+        </p>
+
+        <p>
+          Agora que sabemos sobre o funcionamento dos elementos e seus
+          atributos, podemos ver como um link funciona.
+        </p>
+
+        <p>
+          A tag usada para criar um link é <code>&lt;a&gt;</code>, ela precisa
+          de um conteúdo então é necessária a utilização da tag de fechamento
+          (<code>&lt;/a&gt;</code>)
+        </p>
+
+        <p>Entre as tags, você vai digitar o texto que será usado como link.</p>
+        <p>Exemplo:</p>
+
+        <code>&lt;a&gt;Eu sou um link!&lt;/a&gt;</code>
+
+        <p>
+          Porém esse link precisa ir para algum lugar, certo? É aí que entra o
+          atributo "href", ele receberá como argumento o link propriamente dito,
+          ou seja, o caminho que aquele texto levará quem clicar nele.
+        </p>
+
+        <p>Exemplo:</p>
+
+        <code
+          >&lt;a href='exemplo.html'&gt;Eu sou um link! Clique em
+          mim"&lt;/a&gt;</code
+        >
+
+        <p>Esse código exibirá:</p>
+
+        <a href="exemplo.html">Eu sou um link! Clique em mim</a>
+
+        <p>
+          Esse é um link real feito com o mesmo código que foi dado de exemplo!
+          Pode clicar!
+        </p>
+
+        <p>
+          Note que o link tem uma estilização própria do navegador, ele é azul e
+          possui sublinhado. Você pode alterar isso com CSS mais tarde.
+        </p>
+
+        <h3 id="atributo-target">O atributo "target"</h3>
+
+        <p>
+          Se você clicou no link dado de exemplo, você deve ter sido apresentado
+          ao atributo "target", que fez outra página ser aberta no seu
+          navegador, ele não é obrigatório como o "href" mas é indispensável se
+          você se importa com a expêriencia do usuário do seu site.
+        </p>
+
+        <p>
+          Para utilizá-lo, basta adicionar o atributo com o argumento "_blank",
+          se o que você deseja é que o link abra em outra página.
+        </p>
+
+        <p>Exemplo:</p>
+        <code
+          ><code
+            >&lt;a href='https//www.youtube.com/' target="_blank"&gt;Esse link
+            leva ao YouTube (sem te tirar do meu site)"&lt;/a&gt;</code
+          ></code
+        >
+        <p>Irá exibir:</p>
+        <a href="https://www.youtube.com" target="_blank"
+          >Esse link leva ao YouTube (sem te tirar do meu site)</a
+        >
+      </section>
+
+      <img
+        src="https://th.bing.com/th/id/R.aab62ce3feec69a99fe7dca9a42f850b?rik=HAI5D1yr1H4t0A&riu=http%3a%2f%2ffightersgeneration.com%2fnf5%2fchar%2flink-adult-ocarina-of-time-artwork2.jpg&ehk=peBYUEDOr7dnEAHhZ4WTIxA%2b%2bgcTVBGAKiEJZvz%2bu1c%3d&risl=&pid=ImgRaw&r=0"
+        alt="Personagem Link do jogo Zelda"
+        width="300px"
+      />
+
+      <section id="misturando-elementos">
+        <h2>Misturando elementos</h2>
+
+        <p>
+          Existem algumas tags voltadas para texto e estilização, como é o caso
+          da <code>&lt;b&gt;</code>, que serve para deixar o texto em negrito
+        </p>
+
+        <p>
+          Mas talvez você tenha se perguntado, "e se eu quiser deixar apenas uma
+          palavra em negrito dentro de um parágrafo? Você pode! Basta adicionar
+          um elemento dentro de outro.
+        </p>
+        <p>Exemplo:</p>
+
+        <code>&lt;p&gt;Eu &lt;b&gt;amo&lt;/b&gt; HTML.&lt;/p&gt;</code>
+
+        <p>Esse código exibirá:</p>
+
+        <p>Eu <b>amo</b> HTML.</p>
+
+        <p>
+          Você pode fazer o mesmo usando links e outros elementos que vimos.
+        </p>
+      </section>
+
+      <section id="listas">
+        <h2>As listas</h2>
+
+        <p>
+          Listas são elementos HTML um pouco mais complexos, pois precisam de
+          dois elementos distintos, um dentro do outro.
+        </p>
+
+        <p>Exemplo de lista:</p>
+
+        <code>
+          &lt;ul&gt; <br />
+          &nbsp;&lt;li&gt;Arroz&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;Óleo&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;Bananas&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;Açúcar&lt;/li&gt; <br />
+          &lt;/ul&gt;
+        </code>
+
+        <p>Isso exibirá:</p>
+
+        <ul>
+          <li>Arroz</li>
+          <li>Óleo</li>
+          <li>Bananas</li>
+          <li>Açúcar</li>
+        </ul>
+
+        <p>
+          A lista é composta pelo elemento <code>&lt;ul&gt;</code> com elementos
+          <code>&lt;li&gt;</code> dentro dela, criando cada um dos itens.
+        </p>
+
+        <h3 id="listas-ordenadas-x-nao-ordenadas">
+          Listas ordenadas x Listas não-ordenadas
+        </h3>
+
+        <p>
+          O que você viu de exemplo é chamada de <b>lista não-ordenada</b>, isto
+          é, uma lista em que a ordem não realmente importa e cada item é
+          marcado por um ponto.
+        </p>
+
+        <p>
+          O outro tipo de lista que temos no HTML como você pode imaginar é a
+          lista ordenada, nela, a ordem dos itens importa e eles receberão um
+          número em vez de um ponto.
+        </p>
+
+        <p>Exemplo de lista ordenada:</p>
+
+        <code>
+          &lt;ol&gt; <br />
+          &nbsp;&lt;li&gt;Palmeiras&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;Grêmio&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;AM&lt;/li&gt; <br />
+          &nbsp;&lt;li&gt;Flamengo&lt;/li&gt; <br />
+          &lt;/ol&gt;
+        </code>
+
+        <p>Isso exibirá:</p>
+
+        <ol>
+          <li>Palmeiras</li>
+          <li>Grêmio</li>
+          <li>AM</li>
+          <li>Flamengo</li>
+        </ol>
+
+        <p>
+          Note que a única coisa que mudou foi o elemento "ul" que virou "ol",
+          que significa <b lang="en">ordered list</b>, ou seja, lista ordenada,
+          o contrário de <b lang="en">unordered list</b>, que é lista
+          não-ordenada.
+        </p>
+      </section>
+    </article>
+    <footer id="referencias">
+      <h2>Referências</h2>
+      <p>
+        Alguns sites e vídeos onde você pode encontrar mais informações sobre
+        HTML e tags importantes:
+      </p>
+      <ul>
+        <li>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+            >Documentação da MDN</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/"
+            >Documentação e tutoriais da W3Schools</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=3oSIqIqzN3M&pp=ygUKaHRtbCBiYXNpYw%3D%3D"
+            >HTML em 5 minutos por Rafaella Ballerini</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
