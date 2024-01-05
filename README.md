@@ -3,3 +3,5 @@ Página criada a fim de testar conhecimentos de HTML explicando o próprio HTML 
 Tentei usar algumas tags que li no W3Schools, não sei se usei certo KKKK
 
 Testei se conseguiria fazer uma espécie de sublista no índice e deu certo.
+
+Acabei não usando absolutamente as tags que foram solicitadas.
